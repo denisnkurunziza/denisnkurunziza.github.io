@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home" class="">Home</a>
+            <a href="#about" class="">About</a>
+            <a href="#resume" class="">Resume</a>
+            <a href="#contact" class="">Contact</a>
+        </nav>
+        <hr>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h3>Hello, it's me</h3>
+            <h1>Denis Nkurunziza</h1>
+            <p>I'm a computer programmer passionate about creating innovative and user-friendly web experiences, turning ideas into reality through code.</p>
+            <div class="home-sci">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bx-envelope'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <a href="#about" class="btn-box">More About Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <img src="image/denis.jpeg" alt="Denis Nkurunziza" class="profile-picture">
+            <h2>About Me</h2>
+            <p>I'm Denis Nkurunziza, a passionate computer programmer currently pursuing my Computer Programming Diploma at Algonquin College's Ottawa campus. Based in Ottawa, Canada, I'm dedicated to crafting user-centric web experiences that captivate and inspire. My journey in coding began with a simple curiosity that evolved into a lifelong pursuit of excellence. Beyond the screen, I'm an avid learner, a creative thinker, and a relentless problem solver. Join me on GitHub, where we can collaborate, innovate, and shape the future together.</p>
+            <a href="https://github.com/Nkurunziza7" class="btn-box">Join Me on GitHub</a>
+        </div>
+    </section>    
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me for collaboration, job opportunities, or just to say hello!</p>
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/denisnkurunziza/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Nkurunziza7"><i class='bx bxl-github'></i></a>
+                <a href="mailto:denisnkurunziza@outlook.com"><i class='bx bx-envelope'></i></a>
+                <a href="https://wa.me/13437772831"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling script
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+/* css applied for all page */
+
+*{
+margin: 0;
+Padding: 0;
+font-family: 'poppins', sans-serif;
+box-sizing: border-box;
+}
+
+/* index page css */
+#index-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+#header {
+    background-color: #022b54;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+@media (max-width: 600px) {
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+}
+
+.logo {
+    border-radius: 50%;
+    max-width: 300px;
+    height: 300px;
+  
+    
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #053569;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+nav ul li a:hover {
+    background-color: #111;
+  }
+
+  section {
+    margin: 20px;
+}
+
+#index-body p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+/* Resume CSS Page */
+
+/* navigation bar */
+
+.cont ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .cont li {
+    float: left;
+  }
+  
+  .cont li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .cont li a:hover {
+    background-color: #111;
+  }
+
+.content {
+
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 1);
+
+}
+
+.content .leftside {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.profileText {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgbox {
+
+    position:relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgbox img{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.profileText h2 span
+{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.contactInfo {
+
+    padding-top: 40px;
+}
+
+.title {
+
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul {
+
+    position: relative;
+
+}
+
+.contactInfo ul li {
+    
+    position:relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li .text
+{
+    color: #fff;
+}
+
+
+.contactInfo ul li span a
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactInfo.education li{
+
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5{
+
+    color:#03a9f4;
+    font-weight:500;
+}
+
+.contactInfo.education h4:nth-child(2){
+
+    color:#fff;
+    font-weight: 500;
+
+}
+
+.contactInfo.education h4{
+
+    color:#fff;
+    font-weight: 300;
+}
+
+.contactInfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.language span {
+
+    color: #fff;
+}
+
+.contactInfo.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+
+.content .rightside {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about 
+{
+    margin-bottom: 50px;
+}
+
+.about:last-child
+{
+    margin-bottom: 0;
+}
+
+.title2
+{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.text ul
+{
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .yearcompany h5
+{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4
+{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 
+{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+
+/* Contact Page */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 1000px)
+{
+    .content
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .about .box {
+        flex-direction: column;
+    }
+
+    .about .box .yearcompany {
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    footer {
+        position: static;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Project Page CSS*/
+.project {
+    width: 70%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project p {
+    margin-bottom: 20px; /* Add margin to separate projects */
+}
+
+.project p h2{
+    margin-bottom: 20px; /* Add margin to separate projects */
+}
+
+
+/* footer for all pages*/
+footer {
+    
+    color: rgba(10, 6, 10, 0.267)f4;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

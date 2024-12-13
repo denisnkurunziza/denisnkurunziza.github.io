@@ -1,0 +1,220 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+}
+
+/* Header styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: color 0.3s; /* Improved readability of hover transition */
+}
+
+.navbar a:hover {
+    color: #9B1F53;
+}
+
+/* Home section styles */
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url("../image/back5.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p {
+    font-size: 20px;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #9B1F53;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #9B1F53;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover {
+    background: #9B1F53;
+    color: #081b29;
+    box-shadow: 0 0 20px #9B1F53;
+}
+
+.btn-box {
+    padding: 12px 28px;
+    background: #9B1F53;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: box-shadow 0.3s; /* Improved readability of hover transition */
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px #9B1F53,
+    0 0 25px #9B1F53, 0 0 50px #9B1F53,
+    0 0 100px #9B1F53, 0 0 200px #9B1F53;
+}
+
+/* About section styles */
+.about {
+    background-image: url("../image/background.png");
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.profile-picture {
+    width: 130px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Contact section styles */
+.contact {
+    background-image: url("../image/background.png");
+    background-size: cover;
+    color: #fff; /* Adjust text color as needed */
+    padding: 70px 10% 0;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set height to full viewport height */
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    padding: 12px 28px;
+    background: #9B1F53;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: box-shadow 0.3s; /* Improved readability of hover transition */
+}
+
+.contact button:hover {
+    box-shadow: 0 0 5px #9B1F53,
+    0 0 25px #9B1F53, 0 0 50px #9B1F53,
+    0 0 100px #9B1F53, 0 0 200px #9B1F53;
+}
