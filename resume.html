@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home" class="">Home</a>
+            <a href="#about" class="">About</a>
+            <a href="#resume" class="">Resume</a>
+            <a href="#contact" class="">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <!-- Your home section content here -->
+    </section>
+
+    <section id="about" class="about">
+        <!-- Your about section content here -->
+    </section>
+
+    <section id="resume" class="resume">
+        <div class="content">
+            <div class="leftside">
+                <div class="profileText">
+                    <div class="imgbox">
+                        <img src="image/MyPicture.jpeg" alt="MyProfile">
+                    </div>
+                    <h2>Denis Nkurunziza<br><span>Computer Programmer</span></h2>
+                </div>
+                <div class="contactInfo">
+                    <!-- Contact Info -->
+                </div>
+                <div class="contactInfo education">
+                    <!-- Education Info -->
+                </div>
+                <div class="contactInfo language">
+                    <!-- Language Info -->
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="about">
+                    <!-- Profile Info -->
+                </div>
+                <div class="about">
+                    <!-- Work Experience Info -->
+                </div>
+                <div class="about skills">
+                    <!-- Technical Skills Info -->
+                </div>
+                <div class="about skills">
+                    <!-- Soft Skills Info -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Your other sections (contact, projects, etc.) go here -->
+
+    <script>
+        // Smooth scrolling script
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
