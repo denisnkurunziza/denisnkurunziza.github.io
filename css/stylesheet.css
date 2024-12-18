@@ -8,6 +8,7 @@
 
 body {
     color: #ededed;
+    background-color: #081b29; /* Set a consistent background for better contrast */
 }
 
 /* Header styles */
@@ -17,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #081b29;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,40 +32,96 @@ body {
     font-weight: 600;
 }
 
+.logo img {
+    width: 150px;  /* Adjust the width as needed */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    transition: max-height 0.3s ease-out;
+}
+
 .navbar a {
-    font-size: 25px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: color 0.3s; /* Improved readability of hover transition */
+    transition: color 0.3s;
 }
 
 .navbar a:hover {
     color: #9B1F53;
 }
 
+/* Responsive Navbar for small screens */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust based on header height */
+        left: 0;
+        right: 0;
+        background: #081b29;
+        max-height: 0; /* Hidden initially */
+        overflow: hidden;
+        padding: 0;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navbar.show {
+        max-height: 300px; /* Adjust based on the number of links */
+    }
+}
+
 /* Home section styles */
 .home {
     position: relative;
     width: 100%;
-    justify-content: space-between;
     height: 100vh;
-    background-image: url("../image/back5.png");
+    background-image: url("../image/background.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 70px 10% 0;
 }
 
 .home-content {
     max-width: 600px;
+    text-align: center; /* Center-align text */
+    margin: 0 auto; /* Center content horizontally */
 }
 
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .home-content h1 {
@@ -75,27 +132,14 @@ body {
 
 .home-content p {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.home-sci a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #9B1F53;
-    border-radius: 50%;
+.home-content a {
     font-size: 20px;
-    color: #9B1F53;
-    text-decoration: none;
-    margin: 30px 15px 30px 0;
-}
-
-.home-sci a:hover {
-    background: #9B1F53;
-    color: #081b29;
-    box-shadow: 0 0 20px #9B1F53;
+    display:inline-flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .btn-box {
@@ -107,26 +151,26 @@ body {
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
-    transition: box-shadow 0.3s; /* Improved readability of hover transition */
+    transition: box-shadow 0.3s;
+    display: inline-block;
 }
 
 .btn-box:hover {
-    box-shadow: 0 0 5px #9B1F53,
-    0 0 25px #9B1F53, 0 0 50px #9B1F53,
-    0 0 100px #9B1F53, 0 0 200px #9B1F53;
+    box-shadow: 0 0 5px #9B1F53, 0 0 25px #9B1F53, 0 0 50px #9B1F53;
 }
 
 /* About section styles */
 .about {
-    background-image: url("../image/background.png");
     position: relative;
     width: 100%;
-    justify-content: space-between;
     height: 100vh;
+    background-image: url("../image/background.png");
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 70px 10% 0;
 }
 
@@ -156,15 +200,15 @@ body {
 
 /* Contact section styles */
 .contact {
-    background-image: url("../image/background.png");
-    background-size: cover;
-    color: #fff; /* Adjust text color as needed */
-    padding: 70px 10% 0;
-    justify-content: space-between;
-    display: flex;
     position: relative;
     width: 100%;
-    height: 100vh; /* Set height to full viewport height */
+    height: 100vh;
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+    padding: 70px 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-content {
@@ -172,7 +216,7 @@ body {
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 30px;
-
+    text-align: center;
 }
 
 .contact h2 {
@@ -207,14 +251,62 @@ body {
     font-size: 16px;
     color: #081b29;
     letter-spacing: 1px;
-    text-decoration: none;
     font-weight: 600;
     cursor: pointer;
-    transition: box-shadow 0.3s; /* Improved readability of hover transition */
+    transition: box-shadow 0.3s;
 }
 
 .contact button:hover {
-    box-shadow: 0 0 5px #9B1F53,
-    0 0 25px #9B1F53, 0 0 50px #9B1F53,
-    0 0 100px #9B1F53, 0 0 200px #9B1F53;
+    box-shadow: 0 0 5px #9B1F53, 0 0 25px #9B1F53, 0 0 50px #9B1F53;
+}
+
+/* Social Media icons styles */
+.home-sci {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.home-sci a {
+    color: #fff; /* Icon color */
+    font-size: 20px; /* Icon size */
+    margin-right: 20px; /* Space between the icons */
+    padding: 15px; /* Adds padding around the icon */
+    border-radius: 60%; /* Makes the icon circular */
+    background-color: #9B1F53; /* Circle background color */
+    display: flex;
+    align-items: center; /* Centers the icon vertically */
+    justify-content: center; /* Centers the icon horizontally */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.home-sci a:hover {
+    transform: scale(1.2); /* Slightly enlarges the icon on hover */
+    background-color: #9B1F53; /* Changes background color on hover */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #081b29; /* Footer background */
+    color: #fff; /* Footer text color */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Padding for the footer */
+    position: relative; /* To ensure it stays at the bottom */
+    width: 100%;
+}
+
+.footer p {
+    font-size: 16px; /* Adjust text size */
+    margin: 0; /* Remove margin */
+}
+
+/* Optional: Footer responsiveness for mobile devices */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
 }

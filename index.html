@@ -11,16 +11,16 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-
-        <nav class="navbar">
-            <a href="#home" class="">Home</a>
-            <a href="#about" class="">About</a>
-            <a href="#resume" class="">Resume</a>
-            <a href="#contact" class="">Contact</a>
+        <a href="#" class="logo">My Portfolio</a>
+        <button class="hamburger-menu" id="hamburger-menu">&#9776;</button>
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <hr>
     </header>
+       
 
     <section id="home" class="home">
         <div class="home-content">
@@ -28,10 +28,10 @@
             <h1>Denis Nkurunziza</h1>
             <p>I'm a computer programmer passionate about creating innovative and user-friendly web experiences, turning ideas into reality through code.</p>
             <div class="home-sci">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bx-envelope'></i></a>
-                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.linkedin.com/in/denisnkurunziza/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Nkurunziza7"><i class='bx bxl-github'></i></a>
+                <a href="mailto:denisnkurunziza@outlook.com"><i class='bx bx-envelope'></i></a>
+                <a href="https://wa.me/13437772831"><i class='bx bxl-whatsapp'></i></a>
             </div>
             <a href="#about" class="btn-box">More About Me</a>
         </div>
@@ -70,6 +70,16 @@
                 });
             });
         });
+
+        document.getElementById("hamburger-menu").addEventListener("click", function () {
+             const navbar = document.getElementById("navbar");
+                 navbar.classList.toggle("show");
+        });
     </script>
+
+<footer class="footer">
+    <p>&copy; 2024 Denis Nkurunziza. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
