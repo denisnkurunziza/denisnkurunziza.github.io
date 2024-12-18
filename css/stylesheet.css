@@ -161,9 +161,6 @@ body {
 
 /* About section styles */
 .about {
-    position: relative;
-    width: 100%;
-    height: 100vh;
     background-image: url("../image/background.jpg");
     background-size: cover;
     background-position: center;
@@ -172,6 +169,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 70px 10% 0;
+    margin-bottom: 50px; /* Added margin to prevent overlap */
 }
 
 .profile-picture {
@@ -195,7 +193,7 @@ body {
 .about p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* Contact section styles */
@@ -308,6 +306,7 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: auto;
+    padding: 70px 10% 0;
     padding-bottom: 5rem;
 }
 
@@ -393,14 +392,18 @@ body {
 .education-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
+
 }
-/* Optional: Footer responsiveness for mobile devices */
+
+/* Additional Responsive Adjustment for Smaller Screens */
 @media (max-width: 768px) {
-    .footer {
-        padding: 15px 0;
+    .about {
+        padding: 70px 5%; /* Adjust padding to ensure content fits properly */
+        margin-bottom: 30px; /* Space between About and Resume section */
     }
 
-    .footer p {
-        font-size: 14px;
+    .resume {
+        padding: 50px 5%; /* Reduce padding on small screens */
+        margin-top: 30px; /* Adjust margin for better spacing */
     }
 }
